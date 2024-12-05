@@ -1,0 +1,21 @@
+.video-container {
+    height: 95vh;
+    width: 100%;
+    position: relative;
+}
+.video-container video {
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    top: 5vh;
+    object-fit: cover;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 5vh;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
