@@ -50,14 +50,17 @@ for (let i = 0; i < basket_json.length; i++) {
 let minus=document.querySelectorAll('.minus-button')
 minus.forEach((n,index)=>{
     n.onclick=()=>{
-        let item=basket_json[index+1]
-        if (item['count'] > 1) {
+        let item=basket_json[index]
+        if (item['count'] > 0) {
             item['count'] -= 1;
             item['total price'] -= item['price'];
             let count_list=document.querySelectorAll('.display-list-count')
             count_list[index].textContent = `count: ${item['count']}`;
             let total_price=document.querySelectorAll('.display-list-total')
             total_price[index].textContent = `total price: ${item['total price']}`;
+        }
+        if(item['count']==0){
+            list[index].style.display='none'
         }
     }
 })
