@@ -5,6 +5,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.active {
+    color: #8000ff !important;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
